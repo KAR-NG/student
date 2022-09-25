@@ -21,6 +21,8 @@ Kar Ng
         -   <a href="#412-normalisation" id="toc-412-normalisation">4.1.2
             Normalisation</a>
 -   <a href="#5-visualisation" id="toc-5-visualisation">5 VISUALISATION</a>
+    -   <a href="#51-are-students-hardworking"
+        id="toc-51-are-students-hardworking">5.1 Are students hardworking?</a>
 -   <a href="#6-conclusion" id="toc-6-conclusion">6 CONCLUSION</a>
 -   <a href="#7-reference" id="toc-7-reference">7 REFERENCE</a>
 
@@ -30,6 +32,7 @@ Kar Ng
 library(tidyverse)
 library(kableExtra)
 library(skimr)
+library(RColorBrewer)
 ```
 
 # 2 INTRODUCTION
@@ -765,7 +768,7 @@ G3
 <tr>
 <td style="text-align:left;">
 
-GP
+MS
 
 </td>
 <td style="text-align:left;">
@@ -775,7 +778,174 @@ F
 </td>
 <td style="text-align:right;">
 
-16
+18
+
+</td>
+<td style="text-align:left;">
+
+R
+
+</td>
+<td style="text-align:left;">
+
+GT3
+
+</td>
+<td style="text-align:left;">
+
+T
+
+</td>
+<td style="text-align:right;">
+
+4
+
+</td>
+<td style="text-align:right;">
+
+4
+
+</td>
+<td style="text-align:left;">
+
+other
+
+</td>
+<td style="text-align:left;">
+
+teacher
+
+</td>
+<td style="text-align:left;">
+
+other
+
+</td>
+<td style="text-align:left;">
+
+father
+
+</td>
+<td style="text-align:right;">
+
+3
+
+</td>
+<td style="text-align:right;">
+
+2
+
+</td>
+<td style="text-align:right;">
+
+0
+
+</td>
+<td style="text-align:left;">
+
+no
+
+</td>
+<td style="text-align:left;">
+
+yes
+
+</td>
+<td style="text-align:left;">
+
+yes
+
+</td>
+<td style="text-align:left;">
+
+no
+
+</td>
+<td style="text-align:left;">
+
+no
+
+</td>
+<td style="text-align:left;">
+
+yes
+
+</td>
+<td style="text-align:left;">
+
+yes
+
+</td>
+<td style="text-align:left;">
+
+yes
+
+</td>
+<td style="text-align:right;">
+
+3
+
+</td>
+<td style="text-align:right;">
+
+2
+
+</td>
+<td style="text-align:right;">
+
+2
+
+</td>
+<td style="text-align:right;">
+
+4
+
+</td>
+<td style="text-align:right;">
+
+2
+
+</td>
+<td style="text-align:right;">
+
+5
+
+</td>
+<td style="text-align:right;">
+
+10
+
+</td>
+<td style="text-align:right;">
+
+14
+
+</td>
+<td style="text-align:right;">
+
+12
+
+</td>
+<td style="text-align:right;">
+
+11
+
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+
+GP
+
+</td>
+<td style="text-align:left;">
+
+M
+
+</td>
+<td style="text-align:right;">
+
+15
 
 </td>
 <td style="text-align:left;">
@@ -800,7 +970,174 @@ T
 </td>
 <td style="text-align:right;">
 
-3
+2
+
+</td>
+<td style="text-align:left;">
+
+services
+
+</td>
+<td style="text-align:left;">
+
+services
+
+</td>
+<td style="text-align:left;">
+
+course
+
+</td>
+<td style="text-align:left;">
+
+father
+
+</td>
+<td style="text-align:right;">
+
+1
+
+</td>
+<td style="text-align:right;">
+
+1
+
+</td>
+<td style="text-align:right;">
+
+0
+
+</td>
+<td style="text-align:left;">
+
+yes
+
+</td>
+<td style="text-align:left;">
+
+yes
+
+</td>
+<td style="text-align:left;">
+
+no
+
+</td>
+<td style="text-align:left;">
+
+no
+
+</td>
+<td style="text-align:left;">
+
+yes
+
+</td>
+<td style="text-align:left;">
+
+yes
+
+</td>
+<td style="text-align:left;">
+
+yes
+
+</td>
+<td style="text-align:left;">
+
+no
+
+</td>
+<td style="text-align:right;">
+
+5
+
+</td>
+<td style="text-align:right;">
+
+4
+
+</td>
+<td style="text-align:right;">
+
+1
+
+</td>
+<td style="text-align:right;">
+
+1
+
+</td>
+<td style="text-align:right;">
+
+1
+
+</td>
+<td style="text-align:right;">
+
+1
+
+</td>
+<td style="text-align:right;">
+
+0
+
+</td>
+<td style="text-align:right;">
+
+8
+
+</td>
+<td style="text-align:right;">
+
+8
+
+</td>
+<td style="text-align:right;">
+
+11
+
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+
+GP
+
+</td>
+<td style="text-align:left;">
+
+F
+
+</td>
+<td style="text-align:right;">
+
+17
+
+</td>
+<td style="text-align:left;">
+
+U
+
+</td>
+<td style="text-align:left;">
+
+GT3
+
+</td>
+<td style="text-align:left;">
+
+T
+
+</td>
+<td style="text-align:right;">
+
+2
+
+</td>
+<td style="text-align:right;">
+
+2
 
 </td>
 <td style="text-align:left;">
@@ -815,7 +1152,7 @@ other
 </td>
 <td style="text-align:left;">
 
-reputation
+course
 
 </td>
 <td style="text-align:left;">
@@ -840,7 +1177,7 @@ mother
 </td>
 <td style="text-align:left;">
 
-yes
+no
 
 </td>
 <td style="text-align:left;">
@@ -850,12 +1187,12 @@ yes
 </td>
 <td style="text-align:left;">
 
-yes
+no
 
 </td>
 <td style="text-align:left;">
 
-yes
+no
 
 </td>
 <td style="text-align:left;">
@@ -875,7 +1212,7 @@ no
 </td>
 <td style="text-align:left;">
 
-no
+yes
 
 </td>
 <td style="text-align:right;">
@@ -885,12 +1222,17 @@ no
 </td>
 <td style="text-align:right;">
 
-4
+2
 
 </td>
 <td style="text-align:right;">
 
-3
+2
+
+</td>
+<td style="text-align:right;">
+
+1
 
 </td>
 <td style="text-align:right;">
@@ -905,27 +1247,189 @@ no
 </td>
 <td style="text-align:right;">
 
+12
+
+</td>
+<td style="text-align:right;">
+
+11
+
+</td>
+<td style="text-align:right;">
+
+9
+
+</td>
+<td style="text-align:right;">
+
+9
+
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+
+GP
+
+</td>
+<td style="text-align:left;">
+
+F
+
+</td>
+<td style="text-align:right;">
+
+17
+
+</td>
+<td style="text-align:left;">
+
+U
+
+</td>
+<td style="text-align:left;">
+
+GT3
+
+</td>
+<td style="text-align:left;">
+
+T
+
+</td>
+<td style="text-align:right;">
+
+2
+
+</td>
+<td style="text-align:right;">
+
+4
+
+</td>
+<td style="text-align:left;">
+
+services
+
+</td>
+<td style="text-align:left;">
+
+services
+
+</td>
+<td style="text-align:left;">
+
+reputation
+
+</td>
+<td style="text-align:left;">
+
+father
+
+</td>
+<td style="text-align:right;">
+
+1
+
+</td>
+<td style="text-align:right;">
+
+2
+
+</td>
+<td style="text-align:right;">
+
+0
+
+</td>
+<td style="text-align:left;">
+
+no
+
+</td>
+<td style="text-align:left;">
+
+yes
+
+</td>
+<td style="text-align:left;">
+
+no
+
+</td>
+<td style="text-align:left;">
+
+yes
+
+</td>
+<td style="text-align:left;">
+
+yes
+
+</td>
+<td style="text-align:left;">
+
+yes
+
+</td>
+<td style="text-align:left;">
+
+no
+
+</td>
+<td style="text-align:left;">
+
+no
+
+</td>
+<td style="text-align:right;">
+
+5
+
+</td>
+<td style="text-align:right;">
+
 4
 
 </td>
 <td style="text-align:right;">
 
-6
+2
 
 </td>
 <td style="text-align:right;">
 
-8
+2
 
 </td>
 <td style="text-align:right;">
 
-10
+3
 
 </td>
 <td style="text-align:right;">
 
-10
+5
+
+</td>
+<td style="text-align:right;">
+
+0
+
+</td>
+<td style="text-align:right;">
+
+16
+
+</td>
+<td style="text-align:right;">
+
+17
+
+</td>
+<td style="text-align:right;">
+
+17
 
 </td>
 </tr>
@@ -942,7 +1446,7 @@ M
 </td>
 <td style="text-align:right;">
 
-16
+19
 
 </td>
 <td style="text-align:left;">
@@ -962,12 +1466,12 @@ A
 </td>
 <td style="text-align:right;">
 
-3
+4
 
 </td>
 <td style="text-align:right;">
 
-4
+3
 
 </td>
 <td style="text-align:left;">
@@ -977,12 +1481,12 @@ services
 </td>
 <td style="text-align:left;">
 
-other
+at_home
 
 </td>
 <td style="text-align:left;">
 
-home
+reputation
 
 </td>
 <td style="text-align:left;">
@@ -1007,12 +1511,17 @@ mother
 </td>
 <td style="text-align:left;">
 
-yes
+no
 
 </td>
 <td style="text-align:left;">
 
 yes
+
+</td>
+<td style="text-align:left;">
+
+no
 
 </td>
 <td style="text-align:left;">
@@ -1037,42 +1546,7 @@ yes
 </td>
 <td style="text-align:left;">
 
-yes
-
-</td>
-<td style="text-align:left;">
-
 no
-
-</td>
-<td style="text-align:right;">
-
-5
-
-</td>
-<td style="text-align:right;">
-
-3
-
-</td>
-<td style="text-align:right;">
-
-3
-
-</td>
-<td style="text-align:right;">
-
-1
-
-</td>
-<td style="text-align:right;">
-
-1
-
-</td>
-<td style="text-align:right;">
-
-5
 
 </td>
 <td style="text-align:right;">
@@ -1082,7 +1556,32 @@ no
 </td>
 <td style="text-align:right;">
 
-11
+3
+
+</td>
+<td style="text-align:right;">
+
+1
+
+</td>
+<td style="text-align:right;">
+
+1
+
+</td>
+<td style="text-align:right;">
+
+1
+
+</td>
+<td style="text-align:right;">
+
+1
+
+</td>
+<td style="text-align:right;">
+
+12
 
 </td>
 <td style="text-align:right;">
@@ -1093,6 +1592,178 @@ no
 <td style="text-align:right;">
 
 11
+
+</td>
+<td style="text-align:right;">
+
+11
+
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+
+GP
+
+</td>
+<td style="text-align:left;">
+
+M
+
+</td>
+<td style="text-align:right;">
+
+17
+
+</td>
+<td style="text-align:left;">
+
+U
+
+</td>
+<td style="text-align:left;">
+
+LE3
+
+</td>
+<td style="text-align:left;">
+
+T
+
+</td>
+<td style="text-align:right;">
+
+4
+
+</td>
+<td style="text-align:right;">
+
+4
+
+</td>
+<td style="text-align:left;">
+
+other
+
+</td>
+<td style="text-align:left;">
+
+teacher
+
+</td>
+<td style="text-align:left;">
+
+home
+
+</td>
+<td style="text-align:left;">
+
+father
+
+</td>
+<td style="text-align:right;">
+
+2
+
+</td>
+<td style="text-align:right;">
+
+1
+
+</td>
+<td style="text-align:right;">
+
+0
+
+</td>
+<td style="text-align:left;">
+
+no
+
+</td>
+<td style="text-align:left;">
+
+no
+
+</td>
+<td style="text-align:left;">
+
+yes
+
+</td>
+<td style="text-align:left;">
+
+no
+
+</td>
+<td style="text-align:left;">
+
+yes
+
+</td>
+<td style="text-align:left;">
+
+yes
+
+</td>
+<td style="text-align:left;">
+
+yes
+
+</td>
+<td style="text-align:left;">
+
+no
+
+</td>
+<td style="text-align:right;">
+
+4
+
+</td>
+<td style="text-align:right;">
+
+1
+
+</td>
+<td style="text-align:right;">
+
+1
+
+</td>
+<td style="text-align:right;">
+
+2
+
+</td>
+<td style="text-align:right;">
+
+2
+
+</td>
+<td style="text-align:right;">
+
+5
+
+</td>
+<td style="text-align:right;">
+
+0
+
+</td>
+<td style="text-align:right;">
+
+11
+
+</td>
+<td style="text-align:right;">
+
+11
+
+</td>
+<td style="text-align:right;">
+
+10
 
 </td>
 </tr>
@@ -1124,17 +1795,17 @@ GT3
 </td>
 <td style="text-align:left;">
 
-T
+A
 
 </td>
 <td style="text-align:right;">
 
-2
+3
 
 </td>
 <td style="text-align:right;">
 
-2
+3
 
 </td>
 <td style="text-align:left;">
@@ -1149,12 +1820,17 @@ other
 </td>
 <td style="text-align:left;">
 
-home
+course
 
 </td>
 <td style="text-align:left;">
 
-mother
+other
+
+</td>
+<td style="text-align:right;">
+
+2
 
 </td>
 <td style="text-align:right;">
@@ -1165,76 +1841,81 @@ mother
 <td style="text-align:right;">
 
 2
+
+</td>
+<td style="text-align:left;">
+
+no
+
+</td>
+<td style="text-align:left;">
+
+yes
+
+</td>
+<td style="text-align:left;">
+
+no
+
+</td>
+<td style="text-align:left;">
+
+yes
+
+</td>
+<td style="text-align:left;">
+
+no
+
+</td>
+<td style="text-align:left;">
+
+yes
+
+</td>
+<td style="text-align:left;">
+
+yes
+
+</td>
+<td style="text-align:left;">
+
+yes
+
+</td>
+<td style="text-align:right;">
+
+4
+
+</td>
+<td style="text-align:right;">
+
+3
+
+</td>
+<td style="text-align:right;">
+
+2
+
+</td>
+<td style="text-align:right;">
+
+1
+
+</td>
+<td style="text-align:right;">
+
+1
+
+</td>
+<td style="text-align:right;">
+
+5
 
 </td>
 <td style="text-align:right;">
 
 0
-
-</td>
-<td style="text-align:left;">
-
-no
-
-</td>
-<td style="text-align:left;">
-
-yes
-
-</td>
-<td style="text-align:left;">
-
-yes
-
-</td>
-<td style="text-align:left;">
-
-no
-
-</td>
-<td style="text-align:left;">
-
-no
-
-</td>
-<td style="text-align:left;">
-
-yes
-
-</td>
-<td style="text-align:left;">
-
-yes
-
-</td>
-<td style="text-align:left;">
-
-no
-
-</td>
-<td style="text-align:right;">
-
-5
-
-</td>
-<td style="text-align:right;">
-
-1
-
-</td>
-<td style="text-align:right;">
-
-5
-
-</td>
-<td style="text-align:right;">
-
-1
-
-</td>
-<td style="text-align:right;">
-
-1
 
 </td>
 <td style="text-align:right;">
@@ -1245,16 +1926,6 @@ no
 <td style="text-align:right;">
 
 0
-
-</td>
-<td style="text-align:right;">
-
-6
-
-</td>
-<td style="text-align:right;">
-
-7
 
 </td>
 <td style="text-align:right;">
@@ -1271,12 +1942,12 @@ GP
 </td>
 <td style="text-align:left;">
 
-M
+F
 
 </td>
 <td style="text-align:right;">
 
-16
+19
 
 </td>
 <td style="text-align:left;">
@@ -1286,7 +1957,7 @@ U
 </td>
 <td style="text-align:left;">
 
-LE3
+GT3
 
 </td>
 <td style="text-align:left;">
@@ -1296,17 +1967,17 @@ T
 </td>
 <td style="text-align:right;">
 
-1
+4
 
 </td>
 <td style="text-align:right;">
 
-1
+4
 
 </td>
 <td style="text-align:left;">
 
-services
+health
 
 </td>
 <td style="text-align:left;">
@@ -1316,17 +1987,12 @@ other
 </td>
 <td style="text-align:left;">
 
-course
+reputation
 
 </td>
 <td style="text-align:left;">
 
-mother
-
-</td>
-<td style="text-align:right;">
-
-1
+other
 
 </td>
 <td style="text-align:right;">
@@ -1336,22 +2002,12 @@ mother
 </td>
 <td style="text-align:right;">
 
-1
+2
 
 </td>
-<td style="text-align:left;">
+<td style="text-align:right;">
 
-no
-
-</td>
-<td style="text-align:left;">
-
-no
-
-</td>
-<td style="text-align:left;">
-
-no
+0
 
 </td>
 <td style="text-align:left;">
@@ -1371,7 +2027,7 @@ yes
 </td>
 <td style="text-align:left;">
 
-no
+yes
 
 </td>
 <td style="text-align:left;">
@@ -1379,24 +2035,24 @@ no
 yes
 
 </td>
-<td style="text-align:right;">
+<td style="text-align:left;">
 
-4
+yes
+
+</td>
+<td style="text-align:left;">
+
+yes
+
+</td>
+<td style="text-align:left;">
+
+no
 
 </td>
 <td style="text-align:right;">
 
-4
-
-</td>
-<td style="text-align:right;">
-
-4
-
-</td>
-<td style="text-align:right;">
-
-1
+2
 
 </td>
 <td style="text-align:right;">
@@ -1406,7 +2062,22 @@ yes
 </td>
 <td style="text-align:right;">
 
-5
+4
+
+</td>
+<td style="text-align:right;">
+
+2
+
+</td>
+<td style="text-align:right;">
+
+3
+
+</td>
+<td style="text-align:right;">
+
+2
 
 </td>
 <td style="text-align:right;">
@@ -1416,17 +2087,17 @@ yes
 </td>
 <td style="text-align:right;">
 
-14
+10
 
 </td>
 <td style="text-align:right;">
 
-12
+9
 
 </td>
 <td style="text-align:right;">
 
-12
+0
 
 </td>
 </tr>
@@ -1453,6 +2124,173 @@ U
 </td>
 <td style="text-align:left;">
 
+LE3
+
+</td>
+<td style="text-align:left;">
+
+T
+
+</td>
+<td style="text-align:right;">
+
+4
+
+</td>
+<td style="text-align:right;">
+
+4
+
+</td>
+<td style="text-align:left;">
+
+health
+
+</td>
+<td style="text-align:left;">
+
+services
+
+</td>
+<td style="text-align:left;">
+
+course
+
+</td>
+<td style="text-align:left;">
+
+father
+
+</td>
+<td style="text-align:right;">
+
+1
+
+</td>
+<td style="text-align:right;">
+
+1
+
+</td>
+<td style="text-align:right;">
+
+0
+
+</td>
+<td style="text-align:left;">
+
+no
+
+</td>
+<td style="text-align:left;">
+
+yes
+
+</td>
+<td style="text-align:left;">
+
+yes
+
+</td>
+<td style="text-align:left;">
+
+yes
+
+</td>
+<td style="text-align:left;">
+
+yes
+
+</td>
+<td style="text-align:left;">
+
+yes
+
+</td>
+<td style="text-align:left;">
+
+yes
+
+</td>
+<td style="text-align:left;">
+
+no
+
+</td>
+<td style="text-align:right;">
+
+4
+
+</td>
+<td style="text-align:right;">
+
+3
+
+</td>
+<td style="text-align:right;">
+
+3
+
+</td>
+<td style="text-align:right;">
+
+1
+
+</td>
+<td style="text-align:right;">
+
+3
+
+</td>
+<td style="text-align:right;">
+
+5
+
+</td>
+<td style="text-align:right;">
+
+2
+
+</td>
+<td style="text-align:right;">
+
+14
+
+</td>
+<td style="text-align:right;">
+
+14
+
+</td>
+<td style="text-align:right;">
+
+14
+
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+
+GP
+
+</td>
+<td style="text-align:left;">
+
+F
+
+</td>
+<td style="text-align:right;">
+
+15
+
+</td>
+<td style="text-align:left;">
+
+R
+
+</td>
+<td style="text-align:left;">
+
 GT3
 
 </td>
@@ -1463,12 +2301,12 @@ T
 </td>
 <td style="text-align:right;">
 
-3
+1
 
 </td>
 <td style="text-align:right;">
 
-4
+1
 
 </td>
 <td style="text-align:left;">
@@ -1488,340 +2326,6 @@ reputation
 </td>
 <td style="text-align:left;">
 
-father
-
-</td>
-<td style="text-align:right;">
-
-1
-
-</td>
-<td style="text-align:right;">
-
-1
-
-</td>
-<td style="text-align:right;">
-
-0
-
-</td>
-<td style="text-align:left;">
-
-no
-
-</td>
-<td style="text-align:left;">
-
-no
-
-</td>
-<td style="text-align:left;">
-
-no
-
-</td>
-<td style="text-align:left;">
-
-no
-
-</td>
-<td style="text-align:left;">
-
-yes
-
-</td>
-<td style="text-align:left;">
-
-yes
-
-</td>
-<td style="text-align:left;">
-
-yes
-
-</td>
-<td style="text-align:left;">
-
-no
-
-</td>
-<td style="text-align:right;">
-
-3
-
-</td>
-<td style="text-align:right;">
-
-4
-
-</td>
-<td style="text-align:right;">
-
-3
-
-</td>
-<td style="text-align:right;">
-
-1
-
-</td>
-<td style="text-align:right;">
-
-2
-
-</td>
-<td style="text-align:right;">
-
-4
-
-</td>
-<td style="text-align:right;">
-
-6
-
-</td>
-<td style="text-align:right;">
-
-14
-
-</td>
-<td style="text-align:right;">
-
-13
-
-</td>
-<td style="text-align:right;">
-
-13
-
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-
-GP
-
-</td>
-<td style="text-align:left;">
-
-F
-
-</td>
-<td style="text-align:right;">
-
-17
-
-</td>
-<td style="text-align:left;">
-
-U
-
-</td>
-<td style="text-align:left;">
-
-LE3
-
-</td>
-<td style="text-align:left;">
-
-T
-
-</td>
-<td style="text-align:right;">
-
-2
-
-</td>
-<td style="text-align:right;">
-
-2
-
-</td>
-<td style="text-align:left;">
-
-services
-
-</td>
-<td style="text-align:left;">
-
-services
-
-</td>
-<td style="text-align:left;">
-
-course
-
-</td>
-<td style="text-align:left;">
-
-father
-
-</td>
-<td style="text-align:right;">
-
-1
-
-</td>
-<td style="text-align:right;">
-
-4
-
-</td>
-<td style="text-align:right;">
-
-0
-
-</td>
-<td style="text-align:left;">
-
-no
-
-</td>
-<td style="text-align:left;">
-
-no
-
-</td>
-<td style="text-align:left;">
-
-yes
-
-</td>
-<td style="text-align:left;">
-
-yes
-
-</td>
-<td style="text-align:left;">
-
-yes
-
-</td>
-<td style="text-align:left;">
-
-yes
-
-</td>
-<td style="text-align:left;">
-
-yes
-
-</td>
-<td style="text-align:left;">
-
-yes
-
-</td>
-<td style="text-align:right;">
-
-3
-
-</td>
-<td style="text-align:right;">
-
-4
-
-</td>
-<td style="text-align:right;">
-
-1
-
-</td>
-<td style="text-align:right;">
-
-1
-
-</td>
-<td style="text-align:right;">
-
-1
-
-</td>
-<td style="text-align:right;">
-
-2
-
-</td>
-<td style="text-align:right;">
-
-0
-
-</td>
-<td style="text-align:right;">
-
-10
-
-</td>
-<td style="text-align:right;">
-
-9
-
-</td>
-<td style="text-align:right;">
-
-0
-
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-
-GP
-
-</td>
-<td style="text-align:left;">
-
-F
-
-</td>
-<td style="text-align:right;">
-
-16
-
-</td>
-<td style="text-align:left;">
-
-R
-
-</td>
-<td style="text-align:left;">
-
-GT3
-
-</td>
-<td style="text-align:left;">
-
-T
-
-</td>
-<td style="text-align:right;">
-
-4
-
-</td>
-<td style="text-align:right;">
-
-4
-
-</td>
-<td style="text-align:left;">
-
-health
-
-</td>
-<td style="text-align:left;">
-
-teacher
-
-</td>
-<td style="text-align:left;">
-
-other
-
-</td>
-<td style="text-align:left;">
-
 mother
 
 </td>
@@ -1837,67 +2341,52 @@ mother
 </td>
 <td style="text-align:right;">
 
-0
-
-</td>
-<td style="text-align:left;">
-
-no
-
-</td>
-<td style="text-align:left;">
-
-yes
-
-</td>
-<td style="text-align:left;">
-
-no
-
-</td>
-<td style="text-align:left;">
-
-yes
-
-</td>
-<td style="text-align:left;">
-
-yes
-
-</td>
-<td style="text-align:left;">
-
-yes
-
-</td>
-<td style="text-align:left;">
-
-no
-
-</td>
-<td style="text-align:left;">
-
-no
-
-</td>
-<td style="text-align:right;">
-
 2
 
 </td>
-<td style="text-align:right;">
+<td style="text-align:left;">
 
-4
+yes
+
+</td>
+<td style="text-align:left;">
+
+yes
+
+</td>
+<td style="text-align:left;">
+
+no
+
+</td>
+<td style="text-align:left;">
+
+no
+
+</td>
+<td style="text-align:left;">
+
+no
+
+</td>
+<td style="text-align:left;">
+
+yes
+
+</td>
+<td style="text-align:left;">
+
+yes
+
+</td>
+<td style="text-align:left;">
+
+yes
 
 </td>
 <td style="text-align:right;">
 
-4
-
-</td>
-<td style="text-align:right;">
-
-2
+3
 
 </td>
 <td style="text-align:right;">
@@ -1912,144 +2401,12 @@ no
 </td>
 <td style="text-align:right;">
 
-6
-
-</td>
-<td style="text-align:right;">
-
-10
-
-</td>
-<td style="text-align:right;">
-
-11
-
-</td>
-<td style="text-align:right;">
-
-11
-
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-
-MS
-
-</td>
-<td style="text-align:left;">
-
-F
-
-</td>
-<td style="text-align:right;">
-
-17
-
-</td>
-<td style="text-align:left;">
-
-R
-
-</td>
-<td style="text-align:left;">
-
-GT3
-
-</td>
-<td style="text-align:left;">
-
-T
-
-</td>
-<td style="text-align:right;">
-
-1
-
-</td>
-<td style="text-align:right;">
-
 2
 
 </td>
-<td style="text-align:left;">
-
-other
-
-</td>
-<td style="text-align:left;">
-
-other
-
-</td>
-<td style="text-align:left;">
-
-course
-
-</td>
-<td style="text-align:left;">
-
-mother
-
-</td>
 <td style="text-align:right;">
 
-1
-
-</td>
-<td style="text-align:right;">
-
-1
-
-</td>
-<td style="text-align:right;">
-
-0
-
-</td>
-<td style="text-align:left;">
-
-no
-
-</td>
-<td style="text-align:left;">
-
-no
-
-</td>
-<td style="text-align:left;">
-
-no
-
-</td>
-<td style="text-align:left;">
-
-yes
-
-</td>
-<td style="text-align:left;">
-
-yes
-
-</td>
-<td style="text-align:left;">
-
-yes
-
-</td>
-<td style="text-align:left;">
-
-yes
-
-</td>
-<td style="text-align:left;">
-
-no
-
-</td>
-<td style="text-align:right;">
-
-3
+4
 
 </td>
 <td style="text-align:right;">
@@ -2059,27 +2416,12 @@ no
 </td>
 <td style="text-align:right;">
 
-5
+2
 
 </td>
 <td style="text-align:right;">
 
-1
-
-</td>
-<td style="text-align:right;">
-
-3
-
-</td>
-<td style="text-align:right;">
-
-1
-
-</td>
-<td style="text-align:right;">
-
-14
+8
 
 </td>
 <td style="text-align:right;">
@@ -2090,345 +2432,6 @@ no
 <td style="text-align:right;">
 
 5
-
-</td>
-<td style="text-align:right;">
-
-5
-
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-
-GP
-
-</td>
-<td style="text-align:left;">
-
-F
-
-</td>
-<td style="text-align:right;">
-
-16
-
-</td>
-<td style="text-align:left;">
-
-U
-
-</td>
-<td style="text-align:left;">
-
-GT3
-
-</td>
-<td style="text-align:left;">
-
-T
-
-</td>
-<td style="text-align:right;">
-
-4
-
-</td>
-<td style="text-align:right;">
-
-3
-
-</td>
-<td style="text-align:left;">
-
-teacher
-
-</td>
-<td style="text-align:left;">
-
-health
-
-</td>
-<td style="text-align:left;">
-
-home
-
-</td>
-<td style="text-align:left;">
-
-mother
-
-</td>
-<td style="text-align:right;">
-
-1
-
-</td>
-<td style="text-align:right;">
-
-3
-
-</td>
-<td style="text-align:right;">
-
-0
-
-</td>
-<td style="text-align:left;">
-
-yes
-
-</td>
-<td style="text-align:left;">
-
-yes
-
-</td>
-<td style="text-align:left;">
-
-yes
-
-</td>
-<td style="text-align:left;">
-
-yes
-
-</td>
-<td style="text-align:left;">
-
-yes
-
-</td>
-<td style="text-align:left;">
-
-yes
-
-</td>
-<td style="text-align:left;">
-
-yes
-
-</td>
-<td style="text-align:left;">
-
-no
-
-</td>
-<td style="text-align:right;">
-
-3
-
-</td>
-<td style="text-align:right;">
-
-4
-
-</td>
-<td style="text-align:right;">
-
-4
-
-</td>
-<td style="text-align:right;">
-
-2
-
-</td>
-<td style="text-align:right;">
-
-4
-
-</td>
-<td style="text-align:right;">
-
-4
-
-</td>
-<td style="text-align:right;">
-
-2
-
-</td>
-<td style="text-align:right;">
-
-10
-
-</td>
-<td style="text-align:right;">
-
-9
-
-</td>
-<td style="text-align:right;">
-
-9
-
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-
-GP
-
-</td>
-<td style="text-align:left;">
-
-M
-
-</td>
-<td style="text-align:right;">
-
-15
-
-</td>
-<td style="text-align:left;">
-
-R
-
-</td>
-<td style="text-align:left;">
-
-GT3
-
-</td>
-<td style="text-align:left;">
-
-T
-
-</td>
-<td style="text-align:right;">
-
-3
-
-</td>
-<td style="text-align:right;">
-
-4
-
-</td>
-<td style="text-align:left;">
-
-at_home
-
-</td>
-<td style="text-align:left;">
-
-teacher
-
-</td>
-<td style="text-align:left;">
-
-course
-
-</td>
-<td style="text-align:left;">
-
-mother
-
-</td>
-<td style="text-align:right;">
-
-4
-
-</td>
-<td style="text-align:right;">
-
-2
-
-</td>
-<td style="text-align:right;">
-
-0
-
-</td>
-<td style="text-align:left;">
-
-no
-
-</td>
-<td style="text-align:left;">
-
-yes
-
-</td>
-<td style="text-align:left;">
-
-no
-
-</td>
-<td style="text-align:left;">
-
-no
-
-</td>
-<td style="text-align:left;">
-
-yes
-
-</td>
-<td style="text-align:left;">
-
-yes
-
-</td>
-<td style="text-align:left;">
-
-no
-
-</td>
-<td style="text-align:left;">
-
-yes
-
-</td>
-<td style="text-align:right;">
-
-5
-
-</td>
-<td style="text-align:right;">
-
-3
-
-</td>
-<td style="text-align:right;">
-
-3
-
-</td>
-<td style="text-align:right;">
-
-1
-
-</td>
-<td style="text-align:right;">
-
-1
-
-</td>
-<td style="text-align:right;">
-
-5
-
-</td>
-<td style="text-align:right;">
-
-0
-
-</td>
-<td style="text-align:right;">
-
-9
-
-</td>
-<td style="text-align:right;">
-
-0
-
-</td>
-<td style="text-align:right;">
-
-0
 
 </td>
 </tr>
@@ -2680,6 +2683,56 @@ S2 %>% select(G1, G2, G3, G) %>% summary()
     ##  Max.   :10.000   Max.   :10.000   Max.   :10.000   Max.   :10.00
 
 # 5 VISUALISATION
+
+## 5.1 Are students hardworking?
+
+Let’s see are these students in the dataset hardworking students by
+examining their weekly study time.
+
+``` r
+# data frame
+
+df <- s2 %>% 
+  select(studytime) %>% 
+  mutate(study.time = if_else(studytime == "1", "<2 hours",
+                              if_else(studytime == "2", "2 to 5 hours",
+                                      if_else(studytime == "3", "5 to 10 hours",
+                                              "> 10 hours"))),
+         study.time = factor(study.time, levels = c("<2 hours",
+                                                    "2 to 5 hours",
+                                                    "5 to 10 hours",
+                                                    "> 10 hours"))) %>% 
+  group_by(study.time) %>% 
+  summarise(count = n()) %>%
+  mutate(total = sum(count),
+         per = paste0(round(count/total*100), "%"),
+         x = if_else(count == max(count), "Yes", "No")) 
+
+# plot the graph
+
+ggplot(df, aes(x = count, y = study.time, count, fill = x)) +
+  geom_col(width = 0.6) +
+  theme_minimal() +
+  theme(legend.position = "none",
+        plot.margin = unit(c(1,1,1,1), "cm"),
+        plot.title = element_text(face = "bold"),
+        plot.subtitle = element_text(color = "gray60"),
+        panel.grid = element_blank(),
+        #
+        axis.title.x = element_blank(),
+        axis.text.x = element_blank(),
+        #
+        axis.title.y = element_blank(),
+        axis.text.y = element_text(hjust = 1)) +
+  geom_text(aes(label = per, hjust = -0.5)) +
+  scale_x_continuous(limits = c(0, 250), expand = c(0.01, 0)) +
+  scale_y_discrete(limits = rev) +
+  scale_fill_manual(values = c("gray60", "purple")) +
+  labs(title = "Weekly study time of students",
+       subtitle = "Half of the students spent 2 to 5 hours weekly for studying")
+```
+
+![](student2_files/figure-gfm/unnamed-chunk-16-1.png)<!-- -->
 
 # 6 CONCLUSION
 

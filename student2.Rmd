@@ -300,16 +300,16 @@ ggplot(df, aes(x = count, y = study.time, count, fill = x)) +
   theme(legend.position = "none",
         plot.margin = unit(c(1,1,1,1), "cm"),
         plot.title = element_text(face = "bold"),
-        plot.subtitle = element_text(color = "gray60", face = "bold"),
+        plot.subtitle = element_text(color = "gray60"),
         panel.grid = element_blank(),
         #
         axis.title.x = element_blank(),
         axis.text.x = element_blank(),
         #
         axis.title.y = element_blank(),
-        axis.text.y = element_text(hjust = 1.5)) +
+        axis.text.y = element_text(hjust = 1)) +
   geom_text(aes(label = per, hjust = -0.5)) +
-  scale_x_continuous(limits = c(0, 250)) +
+  scale_x_continuous(limits = c(0, 250), expand = c(0.01, 0)) +
   scale_y_discrete(limits = rev) +
   scale_fill_manual(values = c("gray60", "purple")) +
   labs(title = "Weekly study time of students",
