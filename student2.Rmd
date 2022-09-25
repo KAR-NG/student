@@ -20,7 +20,7 @@ always_allow_html: yes
 library(tidyverse)
 library(kableExtra)
 library(skimr)
-
+library(RColorBrewer)
 ```
 
 
@@ -267,6 +267,59 @@ S2 %>% select(G1, G2, G3, G) %>% summary()
 ```
 
 # VISUALISATION
+
+## Are students hardworking?
+
+Let's see are these students in the dataset hardworking students by examining their weekly study time. 
+
+```{r}
+
+# data frame
+
+df <- s2 %>% 
+  select(studytime) %>% 
+  mutate(study.time = if_else(studytime == "1", "<2 hours",
+                              if_else(studytime == "2", "2 to 5 hours",
+                                      if_else(studytime == "3", "5 to 10 hours",
+                                              "> 10 hours"))),
+         study.time = factor(study.time, levels = c("<2 hours",
+                                                    "2 to 5 hours",
+                                                    "5 to 10 hours",
+                                                    "> 10 hours"))) %>% 
+  group_by(study.time) %>% 
+  summarise(count = n()) %>%
+  mutate(total = sum(count),
+         per = paste0(round(count/total*100), "%"),
+         x = if_else(count == max(count), "Yes", "No")) 
+
+# plot the graph
+
+ggplot(df, aes(x = count, y = study.time, count, fill = x)) +
+  geom_col(width = 0.6) +
+  theme_minimal() +
+  theme(legend.position = "none",
+        plot.margin = unit(c(1,1,1,1), "cm"),
+        plot.title = element_text(face = "bold"),
+        plot.subtitle = element_text(color = "gray60", face = "bold"),
+        panel.grid = element_blank(),
+        #
+        axis.title.x = element_blank(),
+        axis.text.x = element_blank(),
+        #
+        axis.title.y = element_blank(),
+        axis.text.y = element_text(hjust = 1.5)) +
+  geom_text(aes(label = per, hjust = -0.5)) +
+  scale_x_continuous(limits = c(0, 250)) +
+  scale_y_discrete(limits = rev) +
+  scale_fill_manual(values = c("gray60", "purple")) +
+  labs(title = "Weekly study time of students",
+       subtitle = "Half of the students spent 2 to 5 hours weekly for studying")
+
+
+```
+
+
+
 
 
 # CONCLUSION
